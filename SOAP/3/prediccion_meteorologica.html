@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Predicción Meteorológica</title>
+    <!-- Tailwind CSS CDN -->
+    <style>
+        img, video {
+            top: -160px;
+            position: relative;
+            right: -300px;
+            transform: rotate(90deg);
+            width: 60%;
+            height: auto;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-6">
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-8">Predicción Meteorológica</h1>
+        <div class="flex flex-col md:flex-row justify-center gap-4 mb-8">
+            <button id="mapaIsobaras" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded shadow">Mapa Isobaras</button>
+            <button id="infoCanarias" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded shadow">Información Canarias</button>
+            <button id="infoGranCanaria" class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded shadow">Información Gran Canaria</button>
+        </div>
+        <div id="resultado" class="mt-4"></div>
+    </div>
+    <script src="datos.js"></script>
+ 
+</body>
+</html>
